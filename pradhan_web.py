@@ -6,36 +6,39 @@ from pathlib import Path
 st.set_page_config(page_title="Pradhan Coaching Institute", layout="wide")
 
 # ---------- CUSTOM CSS ----------
-# ---------- IMPROVED FORM STYLING ----------
 st.markdown("""
     <style>
-        /* Style Streamlit input boxes */
-        .stTextInput > div > div > input,
-        .stTextArea > div > div > textarea,
-        .stSelectbox > div > div > select {
-            background-color: #ffffff !important;   /* White background */
-            color: #000000 !important;              /* Black text */
-            font-weight: 500 !important;            /* Medium bold */
-            border: 2px solid #2c3e50 !important;   /* Dark border */
-            border-radius: 10px !important;
-            padding: 8px !important;
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
         }
-
-        /* Improve placeholder text visibility */
-        .stTextInput > div > div > input::placeholder,
-        .stTextArea > div > div > textarea::placeholder {
-            color: #555555 !important;
-            opacity: 1 !important;
+        .title {
+            font-size: 50px;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
-
-        /* Style the select dropdown text */
-        .stSelectbox div[data-baseweb="select"] > div {
-            color: #000000 !important;
-            font-weight: 500 !important;
+        .subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: gray;
         }
     </style>
 """, unsafe_allow_html=True)
-
 
 # ---------- HEADER ----------
 st.markdown("<div class='title'>Pradhan Coaching Institute</div>", unsafe_allow_html=True)
@@ -88,10 +91,10 @@ if st.button("Register"):
 # ---------- CONTACT ----------
 st.header("📍 Contact Us")
 st.write("""
-📌 Address: 123 Main Road, Pune, India  
-📞 Phone: +91 98765 43210  
-📧 Email: contact@shreecoaching.com  
+📌 Address: Prachi Complex Opp. Panchatara Hotel Karwar 
+📞 Phone: +91 8722685057  
+📧 Email: pradhaninstitutekarwar@gmail.com  
 """)
 
 # ---------- FOOTER ----------
-st.markdown("<div class='footer'>© 2025 Shree Coaching Institute | Designed with ❤️ in Streamlit</div>", unsafe_allow_html=True)
+#st.markdown("<div class='footer'>© 2025 Shree Coaching Institute | Designed with ❤️ in Streamlit</div>", unsafe_allow_html=True)
